@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #fff;
+}
+#appDiv{
+  display: flex; 
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#contentDiv{
+  width: 60%;
+  height: 37.5rem;
+  background-color: #f5f5f5;
+}
+#formDiv{
+  width: 40%;
+  height: 37.5rem;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+}
+
+
+/* @media screen and (max-width: 768px) {
+  #appDiv {
+    flex-direction: column; 
+  }
+
+  #contentDiv,
+  #formDiv {
+    max-width: 100%; 
+  }
+} */

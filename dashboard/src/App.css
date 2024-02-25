@@ -1,0 +1,286 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+.container {
+    display: flex;
+}
+
+
+.dashboard{
+    display: flex;
+}
+.sidebar {
+    background: #f8fafb;
+    color:black;
+    height: 100vh;
+    width: 18.75em; 
+    transition: all 0.5s;
+    box-shadow: 1px 3px 1px 1px #eef2f2 ;
+    position: relative;
+}
+
+.top_section {
+    display: flex;
+    align-items: center;
+    padding: 1.25em 0.9375em; 
+}
+
+.logo {
+    font-size: 0.875em;
+}
+.logo-text{
+    color: orangered;
+}
+
+.bars {
+    display: flex;
+    font-size: 1.5625em; 
+    color: balck;
+}
+
+.sidebarClose {
+    width: 3.125em;
+    background-color: #000;
+    height: 100vh;
+}
+
+.link:hover {
+    background: #F7EAE6;
+    color: #EB6435;
+    transition: all 0.5s;
+}
+
+.active {
+    background: #F7EAE6;
+    color: #EB6435;
+}
+
+.icon,
+.link_text {
+    font-size: 1.25em; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color:#fff;
+    padding: 0.625em; 
+    position: absolute;
+    width: 100%;
+    top: 0;
+    color: black;
+    flex-basis: 50%;
+    
+}
+
+.navbar .leftContainer-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .leftContainer-nav {
+    justify-content: flex-end;
+    color: black;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.leftContainer-nav input {
+    padding: 0.3125em; 
+    color: black;
+    padding: 0.625em 0.625em 0.625em 10em; 
+    width: 30em;
+    border-radius: 0.57em;
+    background: #f8fafb;
+    border: 1px solid rgb(234, 231, 231);
+    position: relative;
+
+}
+.searchContainer{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    padding: 12px 30px;
+    position: relative;
+}
+.searchicon{
+    padding: 3px;
+} */
+
+
+.leftContainer-nav {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.leftContainer-nav .searchContainer {
+    display: flex;
+    align-items: center;
+}
+
+.leftContainer-nav input {
+    padding: 0.3125em;
+    color: black;
+    padding: 0.625em;
+    width: 50em;
+    border-radius: 0.57em;
+    background: #f8fafb;
+    border: 1px solid rgb(234, 231, 231);
+    position: relative;
+}
+
+
+.searchContainer {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    padding: 20px 30px; 
+    position: relative;
+    background: #eef2f2;
+}
+
+.searchicon {
+    padding: 3px;
+    margin-right: 5px; 
+}
+
+.rightContainer-nav {
+    justify-content: flex-start;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.rightContainer-nav li {
+    padding: 0.9375em 4.6875em 0.9375em 0.9375em;
+    background-color: #f8fafb; 
+}
+
+.leftContainer-nav>div {
+    height: 1.25em; 
+    width: 18.75em; 
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 3.125em; 
+    transition: width 0.3s ease;
+    color: black;
+}
+
+.sidebar.open {
+    width: 15.625em; 
+}
+
+.top_section {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+    margin: auto;
+    width: 3.125em;
+    height: 3.4375em;
+}
+
+.bars {
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: -5px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    padding: 0.625em;
+    margin-top: 0.625em; 
+    gap: 12px;
+}
+
+.link_text {
+    margin-left: 0.625em; 
+    display: none;
+    color: black;
+}
+
+.link:hover .link_text {
+    display: block;
+    color: orangered;
+}
+
+.icon {
+    font-size: 1.25em; 
+}
+
+.link.active {
+    background-color: #F7EAE6;
+    color: orangered;
+}
+
+.opened{
+    position: absolute;
+    top: 5em;
+    left: 17.5em;
+    /* border: 2px solid; */
+    width: 80%;
+}
+.closed{
+    position: absolute;
+    left: 4em;
+    top: 5em;
+}
+/* .searchicon{
+    position: absolute;
+    top: 1.8em;
+    left: 20.625em;
+
+} */
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .navbar .leftContainer-nav input {
+        width: 100%;
+    }
+
+    .rightContainer-nav li {
+        padding: 0.9375em 1em;
+    }
+
+    .opened,
+    .closed {
+        width: 100%;
+        left: 0;
+    }
+
+    .searchicon {
+        left: 70%;
+    }
+}

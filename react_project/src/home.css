@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Poppins-Regular",sans-serif;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background: url(/image.jpg);
+    /* background: url(./01_img.e5cc6a0a.jpg); */
+    /* filter: brightness(50%); */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+
+.header{
+    display: flex;
+    height: 5%;
+    width: 93%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.mainhead{
+    display: flex;
+    align-items: cener;
+    justify-content: center;
+}
+.utility{
+    width: 60%;
+}
+
+.utility>ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+
+}
+
+.utility>ul>li{
+    list-style: none;
+}
+.utility>ul>li>a{
+     color: #fff;
+     font-size: 15.6625px;
+     font-family: sans-serif;
+     font-weight:bolder;
+     text-decoration: none;
+
+
+}
+
+.logo{
+
+    width: 40%;
+
+}
+
+button{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+    text-align: center;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+.middle{
+    width: 100%;
+    display: Flex;
+    align-items: left;
+    justify-content: center;
+    /* border: 2px solid; */
+}
+    
+.sub{
+    width: 80%;
+}
+
+h1{
+    margin-top: 60px;
+    font-size: 4.292rem;
+    color: #fff;
+    margin-bottom: 0.8rem;
+    font-family: sans-serif;
+
+}
+
+
+p{
+    font-size: 1.12rem;
+    color: white;
+    margin-bottom: 3.125rem;
+    font-family: sans-serif;
+    /* padding: 10px; */
+    line-height: 2rem;
+
+}
+
+#lm{
+    height: 60px;
+    width: 200px;
+    border-radius: 0px;
+    font-size: 15.66px;
+    font-weight: bolder;
+    border-color: 2px solid white;
+   
+}
+
+.arrow>a{
+   font-size: 70px;
+    color: white;
+    left: 4rem;
+    bottom: 2rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: arrowAnimation 0.5s infinite alternate;
+}
+@keyframes arrowAnimation {
+    from {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    to {
+        transform: translate(-50%, -50%) translateY(30px);
+    }
+}
+
+
+.words{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    margin-right: 55px;
+    margin-top: -40px;
+    
+}
+
+
+.en{
+    color: rgba(255, 255, 255,0.5);
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+
+.ru{
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+}
